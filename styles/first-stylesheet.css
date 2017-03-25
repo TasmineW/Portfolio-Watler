@@ -1,10 +1,10 @@
 html{
-  background-color:black;
-  background-image:url("../images/forest.jpg" );
+  background-color:#19FF92;
+  /*background-image:url("../images/forest.jpg" );*/
 }
 body{
   width:1500px;
-  height:2000px;
+  height:1700px;
   background-color: black;
   color: white;
   margin: 15px auto;
@@ -20,6 +20,7 @@ padding-bottom:20px;
 background-color:#A588B2;
 color:black;
 }
+
 header h2{
   font-family: 'Fredericka the Great', cursive;
   font-size: 100px;
@@ -28,75 +29,41 @@ header h2{
 header h3 {
   font-size: 30px;
 }
-.container{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-  margin: 50px;
-}
-#one {
-width: 100px;
-height: 100px;
-background: red;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-background-color:grey;
-font-size: 30px;
-font-family: 'Fredericka the Great', cursive;
 
-}
-#one  ul li  {
-  list-style-type: none;
-}
-#two{
-width: 100px;
-height: 100px;
-background: red;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-background-color: grey;
-font-size: 30px;
-font-family: 'Fredericka the Great', cursive;
 
+nav ul{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  padding:20px 100px;
+  font-size: 50px;
 }
-#two ul li {
-  list-style-type: none;
-}
-#two ul {
+nav ul li {
+  display:inline;
   list-style-type:none;
+  background-color:#9314CC;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+nav a{
+  text-decoration:none;
+  text-align:center;
+  color:white;
+  font-size:25px;
+}
+nav a:hover{
+  color:#19FF92;
+}
+.current{
+  color:#FFAB00;
+  font-size: 70px;
 }
 
-#three {
-width: 100px;
-height: 100px;
-background: red;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-background-color:grey;
-font-size: 30px;
-font-family: 'Fredericka the Great', cursive;
-}
 
-#three  ul li  {
-  list-style-type: none;
-}
-#four  {
-width: 100px;
-height: 100px;
-background: red;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-background-color:grey;
-font-size: 30px;
-font-family: 'Fredericka the Great', cursive;
-}
-#four ul li {
-list-style-type:none;
-}
 #sidebarA{
   display:flex;
   flex-direction: column;
@@ -105,37 +72,94 @@ list-style-type:none;
   width:300px;
   height:350px;
   float:left;
+  margin-top:3em;
   padding:20px 20px 20px 20px;
   font-family: 'Amatic SC', cursive;
-  font-size: 20px;
+  font-size: 50px;
 }
-#sidebarA img{
+#sidebarB img{
   align-items: center;
-  padding-top:500px;
+  padding-top:100px;
   padding-bottom: 40px;
 }
 main {
   width: 800px;
   float:left;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 main h2 {
   font-family: 'Fredericka the Great', cursive;
   font-size: 70px;
   font-weight: lighter;
 }
+footer {
+  display:block;
+  background-color:#A588B2;
+  font-size: 15px;
+  text-align:center;
+  padding:30px;
+}
 #sidebarB {
-  width: 100px;
+  width: 200px;
   height: 350px;
   float:right;
   align-items:center;
-  margin-right:250px;
+  margin-right:100px;
   border-left:2px solid black;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Amatic SC', cursive;
   font-weight:lighter;
-  font-size: 50px;
+  text-align: center;
+  font-size: 30px;
 }
-#sidebarB h2{
-  font-weight:lighter;
+#sidebarA img {
+  -webkit-animation-name: spin;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+
+      -moz-animation-name: spin;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+
+      -ms-animation-name: spin;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+        from {
+            -ms-transform: rotate(0deg);
+        } to {
+            -ms-transform: rotate(360deg);
+        }
+    }
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotate(0deg);
+        } to {
+            -moz-transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+        } to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
+        }
+footer{
+  border:5px solid green;
 }
