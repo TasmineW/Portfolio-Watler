@@ -88,6 +88,9 @@ main {
   font-family: 'Amatic SC', cursive;
   font-size: 25px;
 }
+main p:nth-child(3){
+  background-color:#A588B2;
+}
 main h2 {
   font-family: 'Fredericka the Great', cursive;
   font-size: 70px;
@@ -160,6 +163,3 @@ footer {
         } to {
             transform: rotate(360deg);
         }
-footer{
-  border:5px solid green;
-}
